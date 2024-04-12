@@ -1,5 +1,18 @@
 import bandagosaLogo1 from "../assets/bandagosa-logo-1.png";
 import bandagosaLogo2 from "../assets/bandagosa-logo-2.png";
+import bandagosaProfile1 from "../assets/bandagosa-profile1.png";
+import bandagosaProfile2 from "../assets/bandagosa-profile2.png";
+
+import repit from "../assets/repit.webp";
+import toktok from "../assets/toktok.png";
+import nutricoach from "../assets/nutricoach.png";
+import sibs from "../assets/sibs.png";
+import anime from "../assets/anime-api.png";
+import cryptocurrency from "../assets/cryptocurrency.png";
+import gradingSystem from "../assets/grading-system.png";
+import handraiser from "../assets/handraiser.png";
+import pokemon from "../assets/pokemon.png";
+
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
 import api from "../assets/api.png";
@@ -51,6 +64,17 @@ import spotify from "../assets/spotify.png";
 export default {
   bandagosaLogo1,
   bandagosaLogo2,
+  bandagosaProfile1,
+  bandagosaProfile2,
+  repit,
+  toktok,
+  nutricoach,
+  sibs,
+  anime,
+  cryptocurrency,
+  gradingSystem,
+  handraiser,
+  pokemon,
   email,
   mobile,
   api,

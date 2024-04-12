@@ -62,30 +62,90 @@ const about = [
 const projects = [
   {
     id: "0",
-    title: "Modern UI/UX Website",
-    description: "A modern UI/UX Portfolio Website",
-    projectLink: "https://joven-bandagosa-resume.netlify.app/",
-    codeLink: "https://github.com/",
-    imgUrl: images.about01,
-    tags: ["UI/UX", "All"],
+    title: "Repit Social",
+    description: "",
+    projectLink: "https://apps.apple.com/us/app/repitsocial/id1555105222",
+    codeLink: "https://repitsocial.com/",
+    imgUrl: images.repit,
+    tags: ["Mobile App", "UI/UX", "All"],
   },
   {
     id: "1",
-    title: "Gericht Restaurant Project",
-    description: "Modern UI/UX",
-    projectLink: "https://joven-bandagosa-resume.netlify.app/",
-    codeLink: "https://github.com/",
-    imgUrl: images.about02,
-    tags: ["UI/UX", "Mobile App", "All"],
+    title: "Toktok",
+    description: "",
+    projectLink: "https://apps.apple.com/ph/app/toktok-ph/id1522988322",
+    codeLink: "https://toktok.ph/",
+    imgUrl: images.toktok,
+    tags: ["Mobile App", "UI/UX", "All"],
   },
   {
     id: "2",
-    title: "Cool Mobile App",
-    description: "Tinder Clone in React Native",
-    projectLink: "https://joven-bandagosa-resume.netlify.app/",
-    codeLink: "https://github.com/",
-    imgUrl: images.about04,
+    title: "Nutri Coach",
+    description: "",
+    projectLink:
+      "https://play.google.com/store/apps/details?id=pro.nutricoach.client",
+    codeLink: "https://www.nutricoach.com/us/",
+    imgUrl: images.nutricoach,
+    tags: ["Mobile App", "UI/UX", "All"],
+  },
+  {
+    id: "3",
+    title: "Sibs",
+    description: "",
+    projectLink:
+      "https://play.google.com/store/apps/details?id=com.sibsapp.prod&pli=1",
+    codeLink: "https://www.sibs-app.com/",
+    imgUrl: images.sibs,
     tags: ["Mobile App", "All"],
+  },
+  {
+    id: "4",
+    title: "Hand Raiser",
+    description: "",
+    projectLink:
+      "https://github.com/Handraiser-Group-Project-Team-4/handraiser-project",
+    codeLink:
+      "https://github.com/Handraiser-Group-Project-Team-4/handraiser-project",
+    imgUrl: images.handraiser,
+    tags: ["Web App", "React JS", "All"],
+  },
+  {
+    id: "5",
+    title: "FOGS",
+    description: "Forbes Online Grading System",
+    projectLink:
+      "https://drive.google.com/file/d/1B0PRhzl8bzYQGwBpu64vKvcv0MUE4pyO/view",
+    codeLink:
+      "https://drive.google.com/file/d/1B0PRhzl8bzYQGwBpu64vKvcv0MUE4pyO/view",
+    imgUrl: images.gradingSystem,
+    tags: ["Web App", "All"],
+  },
+  {
+    id: "6",
+    title: "Anime Api",
+    description: "",
+    projectLink: "https://anime-list-api.netlify.app/",
+    codeLink: "https://anime-list-api.netlify.app/",
+    imgUrl: images.anime,
+    tags: ["Web App", "All"],
+  },
+  {
+    id: "7",
+    title: "Cryptocurrency",
+    description: "",
+    projectLink: "https://github.com/vhenbandagosa/Crypto-App",
+    codeLink: "https://github.com/vhenbandagosa/Crypto-App",
+    imgUrl: images.cryptocurrency,
+    tags: ["React JS", "All"],
+  },
+  {
+    id: "8",
+    title: "Pokemon Catcher",
+    description: "",
+    projectLink: "https://github.com/vhenbandagosa/Crypto-App",
+    codeLink: "https://github.com/vhenbandagosa/Crypto-App",
+    imgUrl: images.pokemon,
+    tags: ["React JS", "All"],
   },
 ];
 
@@ -205,7 +265,7 @@ const works = [
 const experiences = [
   {
     id: "0",
-    year: "Jan 2024 - Present",
+    year: "2024 - Present",
     works: [
       {
         id: "0",
@@ -218,7 +278,7 @@ const experiences = [
   },
   {
     id: "1",
-    year: "Nov 2022 - Dec 2023",
+    year: "2022 - 2023",
     works: [
       {
         id: "0",
@@ -231,7 +291,7 @@ const experiences = [
   },
   {
     id: "2",
-    year: "Nov 2021 - Nov 2022",
+    year: "2021 - 2022",
     works: [
       {
         id: "0",
@@ -244,7 +304,7 @@ const experiences = [
   },
   {
     id: "3",
-    year: "Apr 2020 - Oct 2021",
+    year: "2020 - 2021",
     works: [
       {
         id: "0",
@@ -257,7 +317,7 @@ const experiences = [
   },
   {
     id: "4",
-    year: "Oct 2019 - Mar 2020",
+    year: "2019 - 2020",
     works: [
       {
         id: "0",
@@ -265,6 +325,18 @@ const experiences = [
         company: "Boomsourcing",
         description:
           "Responsible for developing and implementing user interface components using React.js concepts and workflows such as Redux, Flux, and Webpack.",
+      },
+    ],
+  },
+  {
+    id: "5",
+    year: "2015 - 2019",
+    works: [
+      {
+        id: "0",
+        name: "Bachelors Degree",
+        company: "Forbes College",
+        description: "Bachelor of Science in Information Technology",
       },
     ],
   },
