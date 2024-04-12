@@ -64,7 +64,6 @@ const Footer = () => {
           method="post"
           name="contact"
           action="/contact"
-          onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className="app__flex">
