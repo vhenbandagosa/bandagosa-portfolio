@@ -5,14 +5,14 @@ import "./Footer.scss";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    username: "",
+    name: "",
     email: "",
     message: "",
   });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { username, email, message } = formData;
+  const { name, email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -25,14 +25,14 @@ const Footer = () => {
 
     const contact = {
       _type: "contact",
-      name: formData.username,
+      name: formData.name,
       email: formData.email,
       message: formData.message,
     };
     setTimeout(() => {
       setLoading(false);
       setIsFormSubmitted(true);
-      setFormData({ username: "", email: "", message: "" });
+      setFormData({ name: "", email: "", message: "" });
     }, 500);
     console.log(contact);
   };
@@ -73,8 +73,8 @@ const Footer = () => {
               className="p-text"
               type="text"
               placeholder="Your Name"
-              name="username"
-              value={username}
+              name="name"
+              value={name}
               onChange={handleChangeInput}
             />
           </div>
