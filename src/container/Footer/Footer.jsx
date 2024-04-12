@@ -18,23 +18,28 @@ const Footer = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    const contact = {
-      _type: "contact",
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    };
-    setTimeout(() => {
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (response.ok) {
+        setLoading(false);
+        setIsFormSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Form submission failed!");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
       setLoading(false);
-      setIsFormSubmitted(true);
-      setFormData({ name: "", email: "", message: "" });
-    }, 500);
-    console.log(contact);
+    }
   };
 
   return (
@@ -60,6 +65,7 @@ const Footer = () => {
 
       {!isFormSubmitted ? (
         <form
+          data-netlify="true"
           className="app__footer-form app__flex"
           method="post"
           name="contact"
