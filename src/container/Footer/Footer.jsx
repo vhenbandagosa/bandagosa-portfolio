@@ -61,7 +61,7 @@ const Footer = () => {
       {!isFormSubmitted ? (
         <form
           className="app__footer-form app__flex"
-          method="POST"
+          method="post"
           name="contact"
           action="/contact"
           onSubmit={handleSubmit}
