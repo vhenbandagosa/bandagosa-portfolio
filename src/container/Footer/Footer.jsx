@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Footer.scss";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     message: "",
   });
@@ -20,7 +19,8 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setLoading(true);
 
     const contact = {
@@ -32,6 +32,7 @@ const Footer = () => {
     setTimeout(() => {
       setLoading(false);
       setIsFormSubmitted(true);
+      setFormData({ username: "", email: "", message: "" });
     }, 500);
     console.log(contact);
   };
@@ -56,10 +57,19 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
       {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex">
+        <form
+          className="app__footer-form app__flex"
+          method="POST"
+          name="contact"
+          action="/contact"
+          onSubmit={handleSubmit}
+        >
+          <input type="hidden" name="form-name" value={"contact"} />
           <div className="app__flex">
             <input
+              required
               className="p-text"
               type="text"
               placeholder="Your Name"
@@ -70,6 +80,7 @@ const Footer = () => {
           </div>
           <div className="app__flex">
             <input
+              required
               className="p-text"
               type="email"
               placeholder="Your Email"
@@ -80,6 +91,7 @@ const Footer = () => {
           </div>
           <div>
             <textarea
+              required
               className="p-text"
               placeholder="Your Message"
               value={message}
@@ -87,10 +99,10 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
+          <button type="submit" className="p-text" disabled={loading}>
             {!loading ? "Send Message" : "Sending..."}
           </button>
-        </div>
+        </form>
       ) : (
         <div>
           <h3 className="head-text">Thank you for getting in touch!</h3>
