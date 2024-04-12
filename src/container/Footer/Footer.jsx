@@ -31,7 +31,9 @@ const Footer = () => {
     };
     setTimeout(() => {
       setLoading(false);
+      setIsFormSubmitted(true);
     }, 500);
+    console.log(contact);
   };
 
   return (
