@@ -18,28 +18,23 @@ const Footer = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      });
-
-      if (response.ok) {
-        setLoading(false);
-        setIsFormSubmitted(true);
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        throw new Error("Form submission failed!");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
+    const contact = {
+      _type: "contact",
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
+    setTimeout(() => {
       setLoading(false);
-    }
+      setIsFormSubmitted(true);
+      setFormData({ name: "", email: "", message: "" });
+    }, 500);
+    console.log(contact);
   };
 
   return (
@@ -65,14 +60,13 @@ const Footer = () => {
 
       {!isFormSubmitted ? (
         <form
-          data-netlify="true"
           className="app__footer-form app__flex"
           method="post"
           name="contact"
           action="/contact"
           onSubmit={handleSubmit}
         >
-          <input type="hidden" name="form-name" value={"contact"} />
+          <input type="hidden" name="form-name" value="contact" />
           <div className="app__flex">
             <input
               required
