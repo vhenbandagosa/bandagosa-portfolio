@@ -138,6 +138,15 @@ const projects = [
     imgUrl: images.cryptocurrency,
     tags: ["React JS", "All"],
   },
+  {
+    id: "8",
+    title: "Mempool Terminal",
+    description: "",
+    projectLink: "https://www.mempool-terminal.com/",
+    codeLink: "https://www.mempool-terminal.com/",
+    imgUrl: images.mempool,
+    tags: ["React JS", "All"],
+  },
 ];
 
 const skills = [

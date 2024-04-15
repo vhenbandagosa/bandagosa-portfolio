@@ -12,6 +12,7 @@ import cryptocurrency from "../assets/cryptocurrency.png";
 import gradingSystem from "../assets/grading-system.png";
 import handraiser from "../assets/handraiser.png";
 import pokemon from "../assets/pokemon.png";
+import mempool from "../assets/mempool.png";
 
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
@@ -78,6 +79,7 @@ export default {
   gradingSystem,
   handraiser,
   pokemon,
+  mempool,
   email,
   mobile,
   gmail,
