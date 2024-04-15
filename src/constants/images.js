@@ -15,6 +15,9 @@ import pokemon from "../assets/pokemon.png";
 
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
+import gmail from "../assets/gmail.png";
+import android from "../assets/smart-phone.png";
+
 import api from "../assets/api.png";
 import cpp from "../assets/cpp.png";
 import css from "../assets/css.png";
@@ -77,6 +80,8 @@ export default {
   pokemon,
   email,
   mobile,
+  gmail,
+  android,
   api,
   cpp,
   css,

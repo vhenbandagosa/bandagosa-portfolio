@@ -67,7 +67,7 @@ const projects = [
     projectLink: "https://apps.apple.com/us/app/repitsocial/id1555105222",
     codeLink: "https://repitsocial.com/",
     imgUrl: images.repit,
-    tags: ["Mobile App", "UI/UX", "All"],
+    tags: ["Mobile App", "All"],
   },
   {
     id: "1",
@@ -76,7 +76,7 @@ const projects = [
     projectLink: "https://apps.apple.com/ph/app/toktok-ph/id1522988322",
     codeLink: "https://toktok.ph/",
     imgUrl: images.toktok,
-    tags: ["Mobile App", "UI/UX", "All"],
+    tags: ["Mobile App", "All"],
   },
   {
     id: "2",
@@ -86,7 +86,7 @@ const projects = [
       "https://play.google.com/store/apps/details?id=pro.nutricoach.client",
     codeLink: "https://www.nutricoach.com/us/",
     imgUrl: images.nutricoach,
-    tags: ["Mobile App", "UI/UX", "All"],
+    tags: ["Mobile App", "All"],
   },
   {
     id: "3",
@@ -136,15 +136,6 @@ const projects = [
     projectLink: "https://github.com/vhenbandagosa/Crypto-App",
     codeLink: "https://github.com/vhenbandagosa/Crypto-App",
     imgUrl: images.cryptocurrency,
-    tags: ["React JS", "All"],
-  },
-  {
-    id: "8",
-    title: "Pokemon Catcher",
-    description: "",
-    projectLink: "https://github.com/vhenbandagosa/Crypto-App",
-    codeLink: "https://github.com/vhenbandagosa/Crypto-App",
-    imgUrl: images.pokemon,
     tags: ["React JS", "All"],
   },
 ];
